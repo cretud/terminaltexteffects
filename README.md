@@ -52,13 +52,12 @@
 
 #### Arber Gjigolli
 
-**Function 1:** `_color`
+**Function 1:** `_color`  
 **Link:** [Commit](https://github.com/cretud/terminaltexteffects/pull/1/commits/6689e7fada154f3bb30f7c0e684110f6395adc8f)  
-
 **Screenshot:**  
 ![Personal Branch Coverage Tool](README/coverage_tool_colorterm.PNG)
 
-**Function 2:** `color._init_`
+**Function 2:** `color._init_`  
 **Link:** [Commit](https://github.com/cretud/terminaltexteffects/pull/2/commits/b4762d6e708e866b0d8ca8db596edeefef54a0ba)  
 **Screenshot:**  
 ![Personal Branch Coverage Tool](README/coverage_tool_graphics.PNG)
@@ -98,27 +97,46 @@
 
 #### Arber Gjigolli
 
-**Test 1:** `test_fg_with_valid_hex_strings` + **Test 2:** `test_fg_with_valid_int_values` + **Test 3:** `test_fg_with_invalid_hex_strings` + **Test 4:** `test_fg_with_invalid_int_values` + **Test 5:** `test_fg_with_invalid_type` + **Test 6:** `test_bg_with_valid_hex_strings` + **Test 7:** `test_bg_with_valid_int_values` + **Test 8:** `test_bg_with_invalid_hex_strings` + **Test 9:** `test_bg_with_invalid_int_values` + **Test 10:** `test_bg_with_invalid_type` + **Test 11:** `test_fg_edge_cases` + **Test 12:** `test_bg_edge_cases` 
+**Test 1:** `test_fg_with_valid_hex_strings`  
+**Test 2:** `test_fg_with_valid_int_values`  
+**Test 3:** `test_fg_with_invalid_hex_strings`  
+**Test 4:** `test_fg_with_invalid_int_values`  
+**Test 5:** `test_fg_with_invalid_type`  
+**Test 6:** `test_bg_with_valid_hex_strings`  
+**Test 7:** `test_bg_with_valid_int_values`  
+**Test 8:** `test_bg_with_invalid_hex_strings`  
+**Test 9:** `test_bg_with_invalid_int_values`  
+**Test 10:** `test_bg_with_invalid_type`  
+**Test 11:** `test_fg_edge_cases`  
+**Test 12:** `test_bg_edge_cases`  
 **Link:** [Commit](https://github.com/cretud/terminaltexteffects/pull/1/commits/7936d8dd2a4328845c3b922784aad32ca1dda21b)  
-**Screenshot Before:**  
-![Function Before Coverage](README/_color_coverage_before.PNG)
-![File Before Coverage](README/colorterm_coverage_before.PNG)
-**Screenshot After:**  
-![Function After Coverage](README/_color_coverage_after.PNG) 
+**Screenshot Before Function Coverage:**  
+![Function Before Coverage](README/_color_coverage_before.PNG)  
+**Screenshot Before File Coverage:**  
+![File Before Coverage](README/colorterm_coverage_before.PNG)  
+**Screenshot After Function Coverage:**  
+![Function After Coverage](README/_color_coverage_after.PNG)  
+**Screenshot After File Coverage:**  
 ![File After Coverage](README/colorterm_coverage_after.PNG)  
 
-*Coverage improved from 78% to 100%* Since _color is a private function, it should not be tested directly. Instead, we test the public functions fg and bg, which internally call _color. By thoroughly testing fg and bg, we ensure that _color is also tested indirectly. The tests for the fg function check valid hex strings and xterm integers.  Invalid hex strings, integers, and types are tested to verify that ValueError is raised. The bg function is similarly tested for valid and invalid inputs. Edge case tests cover hex strings with and without hash symbols and the lowest and highest valid xterm integers, ensuring comprehensive coverage.
+*Coverage improved from 78% to 100%* Since _color is a private function, it should not be tested directly. Instead, we test the public functions fg and bg, which internally call _color. By thoroughly testing fg and bg, we ensure that _color is also tested indirectly. The tests for the fg function check valid hex strings and xterm integers.  Invalid hex strings, integers, and types are tested to verify that ValueError is raised. The bg function is similarly tested for valid and invalid inputs. Edge case tests cover hex strings with and without hash symbols and the lowest and highest valid xterm integers, ensuring comprehensive coverage.  
 
-**Test 13:** `test_color_init_with_valid_xterm_color` + **Test 14:** `test_color_init_with_invalid_color_value` + **Test 15:** `test_color_init_with_valid_hex_color`    
+**Test 13:** `test_color_init_with_valid_xterm_color`  
+**Test 14:** `test_color_init_with_invalid_color_value`  
+**Test 15:** `test_color_init_with_valid_hex_color`  
 **Link:** [Commit](https://github.com/cretud/terminaltexteffects/pull/2/commits/73940b1b0ff55716453672415f161ef7c568c417)  
-**Screenshot Before:**  
-![Function Before Coverage](README/color._init_coverage_before.PNG) 
+**Screenshot Before Function Coverage:**  
+![Function Before Coverage](README/color._init_coverage_before.PNG)  
+**Screenshot Before File Coverage:**  
+
 ![File Before Coverage](README/graphics_coverage_before.PNG)  
-**Screenshot After:**  
+**Screenshot After Function Coverage:**  
 ![Function After Coverage](README/color._init_coverage_after.PNG)  
+**Screenshot After File Coverage:**  
+
 ![File After Coverage](README/graphics_coverage_after.PNG)  
 
-*Coverage improved from 67% to 100%* These tests ensure comprehensive coverage of the Color class initialization. The first test verifies proper attribute setting for valid XTerm-256 color codes. The second test checks that a ValueError is raised for invalid color values, including non-hex strings and out-of-range integers. The third test confirms correct handling of valid RGB hex color strings, ensuring appropriate attribute assignment.
+*Coverage improved from 67% to 100%* These tests ensure comprehensive coverage of the Color class initialization. The first test verifies proper attribute setting for valid XTerm-256 color codes. The second test checks that a ValueError is raised for invalid color values, including non-hex strings and out-of-range integers. The third test confirms correct handling of valid RGB hex color strings, ensuring appropriate attribute assignment.  
 
 ### Overall
 
