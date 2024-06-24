@@ -55,6 +55,7 @@
 **Function 1:** `_color`
 
 **Link:** [Commit](https://github.com/cretud/terminaltexteffects/pull/1/commits/6689e7fada154f3bb30f7c0e684110f6395adc8f)  
+
 **Screenshot:**  
 ![Personal Branch Coverage Tool](README/coverage_tool_colorterm.PNG)
 
