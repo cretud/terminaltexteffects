@@ -78,6 +78,21 @@
 **Screenshot:** 
 ![image](https://github.com/cretud/terminaltexteffects/assets/122397977/0773d61e-2c63-4541-af8b-b1fe30bc18d6)
 
+#### Ioana-Alexandra Mitran
+
+**Function 1:** `in_out_cubic`
+
+**Link:** (https://github.com/cretud/terminaltexteffects/blob/main/tests/coverage_tool_easing_ioana.py)
+**Screenshot:**
+![Personal Branch Coverage Tool](README/coverage_tool_in_out_cubic.png)
+
+
+**Function 2:** `in_out_quint`
+
+**Link:** (https://github.com/cretud/terminaltexteffects/blob/main/tests/coverage_tool_in_out_quint_ioana.py)
+**Screenshot:**
+![Personal Branch Coverage Tool](README/coverage_tool_in_out_quint.png)
+
 
 ## Coverage Improvement
 
@@ -205,6 +220,29 @@ test_in_elastic_near_one: Checks the behavior of the in_elastic function when th
 'test_valid_gradient_direction_radial':Checks the type_parser method of GradientDirection when the input is "radial". It ensures the method correctly returns Gradient.Direction.RADIAL.
 
 'test_invalid_gradient_direction':Checks the type_parser method of GradientDirection when the input is an invalid direction ("invalid_direction"). It ensures the method raises an argparse.ArgumentTypeError exception for invalid inputs.
+
+#### Ioana-Alexandra Mitran
+
+**Test 1:** `test_in_out_cubic` 
+**Link:** (https://github.com/cretud/terminaltexteffects/blob/main/tests/test_easing_ioana.py)  
+**Screenshot Before:**  
+![Before Coverage](README/in_out_cubic_before.png)  
+**Screenshot After:**  
+![After Coverage](README/test_in_out_cubic_after.png)  
+
+*Coverage improved from 0% to 100%*
+'test_in_out_cubic' : Checks the easing function at key points: the start (0.0), the end (1.0), the midpoint (0.5), and intermediate values (0.25, 0.75). It ensures the function transitions smoothly and symmetrically, using pytest.approx for precise validation at additional points like 0.1, 0.9, 0.499, and 0.501.
+
+**Test 1:** `test_in_out_quint` 
+**Link:** (https://github.com/cretud/terminaltexteffects/blob/main/tests/test_in_out_quint_easing_ioana.py)  
+**Screenshot Before:**  
+![Before Coverage](README/test_in_out_quint_before.png)  
+**Screenshot After:**  
+![After Coverage](README/test_in_out_quint_after.png)  
+
+*Coverage improved from 0% to 100%*
+'test_in_out_quint' : Checks the output at critical points. It ensures smooth transitions and symmetry, using pytest.approx for precise validation at additional points like 0.1, 0.9, 0.499, and 0.501.
+
 
 ### Overall
 
