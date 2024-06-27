@@ -164,8 +164,7 @@
 ![File Before Coverage](README/graphics_coverage_before.PNG)  
 **Screenshot After Function Coverage:**  
 ![Function After Coverage](README/color._init_coverage_after.PNG)  
-**Screenshot After File Coverage:**  ![image](https://github.com/cretud/terminaltexteffects/assets/122397977/9bc7a7d8-89a7-4c65-a02b-7612695ce7bf)
-
+**Screenshot After File Coverage:**  
 
 ![File After Coverage](README/graphics_coverage_after.PNG)  
 
