@@ -197,13 +197,13 @@
 ### Overall
 
 **Screenshot Before:**  
-![Old Coverage Results](README/BeforeTestCoverage.png)  
+![Old Coverage Results](README/BeforeReport.png)  
 **Screenshot After:**  
-![New Coverage Results](README/AfterTestCoverage.png)  
+![New Coverage Results](README/FinalReport.png)  
 
 ## Statement of Individual Contributions
 
-- **Mihail-Dimosthenis Cretu:** [Contributions]
+- **Mihail-Dimosthenis Cretu:** Besides the code contributions(test suite and branch tool), I searched for a repository that matched the criteria, forked the repository, and set up the repository for the group.
 - **Arber Gjigolli:** [Contributions]
 - **Andreas-Stefan Voinopol:** [Contributions]
 - **Ioana-Alexandra Mitran:** [Contributions]
