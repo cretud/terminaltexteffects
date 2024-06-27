@@ -227,7 +227,7 @@ test_in_elastic_near_one: Checks the behavior of the in_elastic function when th
 **Screenshot Before:**  
 ![Before Coverage](README/in_out_cubic_before.png)  
 **Screenshot After:**  
-![After Coverage](README/test_in_out_cubic_after.png)  
+![After Coverage](README/in_out_cubic_after.png)  
 
 *Coverage improved from 0% to 100%*
 'test_in_out_cubic' : Checks the easing function at key points: the start (0.0), the end (1.0), the midpoint (0.5), and intermediate values (0.25, 0.75). It ensures the function transitions smoothly and symmetrically, using pytest.approx for precise validation at additional points like 0.1, 0.9, 0.499, and 0.501.
@@ -235,9 +235,9 @@ test_in_elastic_near_one: Checks the behavior of the in_elastic function when th
 **Test 1:** `test_in_out_quint` 
 **Link:** (https://github.com/cretud/terminaltexteffects/blob/main/tests/test_in_out_quint_easing_ioana.py)  
 **Screenshot Before:**  
-![Before Coverage](README/test_in_out_quint_before.png)  
+![Before Coverage](README/in_out_quint_before.png)  
 **Screenshot After:**  
-![After Coverage](README/test_in_out_quint_after.png)  
+![After Coverage](README/in_out_quint_after.png)  
 
 *Coverage improved from 0% to 100%*
 'test_in_out_quint' : Checks the output at critical points. It ensures smooth transitions and symmetry, using pytest.approx for precise validation at additional points like 0.1, 0.9, 0.499, and 0.501.
