@@ -206,4 +206,4 @@
 - **Mihail-Dimosthenis Cretu:** Besides the code contributions(test suite and branch tool), I searched for a repository that matched the criteria, forked the repository, and set up the repository for the group.
 - **Arber Gjigolli:** I contributed by creating the tests and branch tool, as well as improving an already existing test as it was not extensive and was key to improving the coverage of the funcion I chose which was private, and needed to be called through the use of othe public functions.
 - **Andreas-Stefan Voinopol:** [Contributions]
-- **Ioana-Alexandra Mitran:** [Contributions]
+- **Ioana-Alexandra Mitran:** My contribution to the project was creating two test suites for two functions and its coverage tool.
