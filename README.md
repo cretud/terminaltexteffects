@@ -62,6 +62,23 @@
 **Screenshot:**  
 ![Personal Branch Coverage Tool](README/coverage_tool_graphics.PNG)
 
+#### Andreas-Stefan Voinopol
+
+**Function 1:** `in_elastic`
+
+**Link:** https://github.com/cretud/terminaltexteffects/blob/main/tests/tool_in_elastic_Andreas.py
+
+**Screenshot:**  
+![image](https://github.com/cretud/terminaltexteffects/assets/122397977/ca303d8a-dcf7-4e94-8621-13be08ea467c)
+
+
+**Function 2:** `GradientDirection.type_parser`
+
+**Link:** https://github.com/cretud/terminaltexteffects/blob/main/tests/tool_gradient_direction_Andreas.py
+**Screenshot:** 
+![image](https://github.com/cretud/terminaltexteffects/assets/122397977/0773d61e-2c63-4541-af8b-b1fe30bc18d6)
+
+
 ## Coverage Improvement
 
 ### Individual Tests
@@ -132,11 +149,62 @@
 ![File Before Coverage](README/graphics_coverage_before.PNG)  
 **Screenshot After Function Coverage:**  
 ![Function After Coverage](README/color._init_coverage_after.PNG)  
-**Screenshot After File Coverage:**  
+**Screenshot After File Coverage:**  ![image](https://github.com/cretud/terminaltexteffects/assets/122397977/9bc7a7d8-89a7-4c65-a02b-7612695ce7bf)
+
 
 ![File After Coverage](README/graphics_coverage_after.PNG)  
 
 *Coverage improved from 67% to 100%* These tests ensure comprehensive coverage of the Color class initialization. The first test verifies proper attribute setting for valid XTerm-256 color codes. The second test checks that a ValueError is raised for invalid color values, including non-hex strings and out-of-range integers. The third test confirms correct handling of valid RGB hex color strings, ensuring appropriate attribute assignment.  
+
+
+#### Andreas-Stefan Voinopol 
+
+**Test 1:** `test_in_elastic_zero`  
+**Test 2:** `test_in_elastic_one`  
+**Test 3:** `test_in_elastic_mid`  
+**Test 4:** `test_in_elastic_near_zero`  
+**Test 5:** `test_in_elastic_near_zero` 
+
+**Link:** https://github.com/cretud/terminaltexteffects/blob/main/tests/test_in_elastic.py
+
+**Screenshot Before :** ![image](https://github.com/cretud/terminaltexteffects/assets/122397977/6ec958c2-4f3c-4a41-a8b4-7d41c24ed5e3)
+
+
+**Screenshot After :** ![image](https://github.com/cretud/terminaltexteffects/assets/122397977/1b6d2b71-08d3-42c5-998d-f67d63db6806)
+
+*Coverage improved from 0% to 100%*.Test 1 checks the behavior of the in_elastic function when the input is 0, which is a boundary condition.
+
+test_in_elastic_one: Checks the behavior of the in_elastic function when the input is 1, which is another boundary condition.
+
+test_in_elastic_mid: Checks the behavior of the in_elastic function for an intermediate value (0.5). The expected value is calculated manually using the formula to ensure the function returns the correct output.
+
+test_in_elastic_near_zero: Checks the behavior of the in_elastic function when the input is close to 0 (0.01). The expected value is calculated using the formula to verify the function's accuracy for values near zero.
+
+test_in_elastic_near_one: Checks the behavior of the in_elastic function when the input is close to 1 (0.99). The expected value is calculated using the formula to verify the function's accuracy for values near one.
+
+**Test 6:** `test_valid_gradient_direction_horizontal`  
+**Test 7:** `test_valid_gradient_direction_vertical`  
+**Test 8:** `test_valid_gradient_direction_diagonal`  
+**Test 9:** `test_valid_gradient_direction_radial`  
+**Test 10:** `test_invalid_gradient_direction` 
+
+**Link:** https://github.com/cretud/terminaltexteffects/blob/main/tests/test_gradient_direction.py
+
+**Screenshot Before :** ![image](https://github.com/cretud/terminaltexteffects/assets/122397977/a91098d1-3abb-43c9-bfce-a465256cbdc9)
+
+
+**Screenshot After :** ![image](https://github.com/cretud/terminaltexteffects/assets/122397977/9d9d552c-309a-4b86-9bfc-b81572a18810)
+
+*Coverage improved from 0% to 100%*. 
+'test_valid_gradient_direction_horizontal':Checks the type_parser method of GradientDirection when the input is "horizontal". It ensures the method correctly returns Gradient.Direction.HORIZONTAL.
+
+'test_valid_gradient_direction_vertical':Checks the type_parser method of GradientDirection when the input is "vertical". It ensures the method correctly returns Gradient.Direction.VERTICAL.
+
+'test_valid_gradient_direction_diagonal':Checks the type_parser method of GradientDirection when the input is "diagonal". It ensures the method correctly returns Gradient.Direction.DIAGONAL.
+
+'test_valid_gradient_direction_radial':Checks the type_parser method of GradientDirection when the input is "radial". It ensures the method correctly returns Gradient.Direction.RADIAL.
+
+'test_invalid_gradient_direction':Checks the type_parser method of GradientDirection when the input is an invalid direction ("invalid_direction"). It ensures the method raises an argparse.ArgumentTypeError exception for invalid inputs.
 
 ### Overall
 
