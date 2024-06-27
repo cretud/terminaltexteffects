@@ -177,7 +177,7 @@
 **Test 2:** `test_in_elastic_one`  
 **Test 3:** `test_in_elastic_mid`  
 **Test 4:** `test_in_elastic_near_zero`  
-**Test 5:** `test_in_elastic_near_zero` 
+**Test 5:** `test_in_elastic_near_one` 
 
 **Link:** https://github.com/cretud/terminaltexteffects/blob/main/tests/test_in_elastic.py
 
